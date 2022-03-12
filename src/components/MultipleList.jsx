@@ -29,9 +29,9 @@ const Multiplelist = () => {
     },
   ];
 
-  const [selectedJobs, setSelectedJobs] = useState([]);
+  const [_, setSelectedJobs] = useState([]);
 
-  const [jobsArr, setJobsArr] = useState(jobs);
+  const [jobsArr] = useState(jobs);
 
   const [isInputOpen, setIsInputOpen] = useState(false);
 
@@ -60,7 +60,7 @@ const Multiplelist = () => {
                     onClick={(e) => handleRemove(job)}
                     className="inputCloseBtn"
                   >
-                    <img src={InputCloseBtn} />
+                    <img src={InputCloseBtn} alt="" />
                   </button>
                 </div>
               );
