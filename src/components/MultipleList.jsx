@@ -29,7 +29,7 @@ const Multiplelist = () => {
     },
   ];
 
-  const [_, setSelectedJobs] = useState([]);
+  const [, setSelectedJobs] = useState([]);
 
   const [jobsArr] = useState(jobs);
 
@@ -65,6 +65,7 @@ const Multiplelist = () => {
                 </div>
               );
             }
+            return [];
           })}
         </div>
 
