@@ -1,0 +1,141 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.selector {
+  margin: 0 auto;
+  padding: 0;
+  width: 240px;
+}
+
+#selectorField {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: red;
+  width: 241px;
+  background: #ffffff;
+  border: 1px solid #b8b8b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.selectorFieldWrapper {
+  display: flex;
+}
+
+#selectorField p {
+  margin: 0;
+  padding: 0;
+}
+
+.selector__arrow {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.selector__arrow img {
+  margin: 0;
+  padding: 0;
+}
+
+.selectorField__list {
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  max-width: 100%;
+  overflow: scroll;
+}
+
+.selectorField__item {
+  margin: 0;
+  padding: 4px;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  background: #e8f7f1;
+  border-radius: 4px;
+}
+
+.selectorField__item-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #19ab6e;
+}
+
+.inputCloseBtn {
+  margin: 0;
+  margin-left: 4px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  cursor: pointer;
+}
+
+.inputCloseBtn img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.options__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  box-shadow: 0px 6px 12px #e6e6e6;
+  border-radius: 4px;
+}
+
+.options__item {
+  margin: 0;
+  /* margin-bottom: 16px; */
+  padding: 16px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.options__item:hover {
+  background-color: lightgray;
+}
+
+.options__item p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #111111;
+}
+
+.options__item img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

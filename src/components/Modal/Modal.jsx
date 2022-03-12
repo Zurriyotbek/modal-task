@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Modal/Modal.css";
+import MultipleList from "../MultipleList";
 
 const Modal = ({ modalState, setModalState, users, setUsers }) => {
   const [inputNameValue, setInputNameValue] = useState();
@@ -101,15 +102,19 @@ const Modal = ({ modalState, setModalState, users, setUsers }) => {
 
             {/* User Choice */}
             <label>Rollar</label>
-            <select
+
+            <MultipleList />
+
+            {/* <select
               defaultValue={"modelchi"}
               onChange={handleSelect}
               className="form__select"
               required
+              multiple
             >
               <option value="modelchi">modelchi</option>
               <option value="artist">artist</option>
-            </select>
+            </select> */}
           </div>
         </form>
         {/* Button group */}
