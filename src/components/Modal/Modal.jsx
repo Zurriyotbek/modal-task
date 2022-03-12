@@ -7,11 +7,8 @@ const Modal = ({ modalState, setModalState, users, setUsers }) => {
   const [inputSurnameValue, setInputSurnameValue] = useState();
   const [inputNumberValue, setInputNumberValue] = useState();
   const [inputBirthDateValue, setInputBirthDateValue] = useState();
-  const [inputRoleValue, SetInputRoleValue] = useState("modelchi");
-
-  function handleSelect(e) {
-    SetInputRoleValue(e.target.value);
-  }
+  const [inputRoleValue] = useState("modelchi");
+  // SetInputRoleValue("modelchi");
 
   function handleSaveButton() {
     setUsers((prev) => {
@@ -104,17 +101,6 @@ const Modal = ({ modalState, setModalState, users, setUsers }) => {
             <label>Rollar</label>
 
             <MultipleList />
-
-            {/* <select
-              defaultValue={"modelchi"}
-              onChange={handleSelect}
-              className="form__select"
-              required
-              multiple
-            >
-              <option value="modelchi">modelchi</option>
-              <option value="artist">artist</option>
-            </select> */}
           </div>
         </form>
         {/* Button group */}
