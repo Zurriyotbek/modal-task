@@ -6,10 +6,6 @@ import InputCloseBtn from "../images/inputCloseBnt.svg";
 import TickIcon from "../images/tick-icon.svg";
 
 const Multiplelist = () => {
-  function sayHi() {
-    console.log("hi");
-  }
-
   const jobs = [
     {
       id: 1,
@@ -50,8 +46,6 @@ const Multiplelist = () => {
     setSelectedJobs(jobsArr.map((i) => !i.isSelected));
   }
 
-  console.log(jobsArr);
-
   return (
     <div className="selector">
       <div id="selectorField">
@@ -66,7 +60,7 @@ const Multiplelist = () => {
                     onClick={(e) => handleRemove(job)}
                     className="inputCloseBtn"
                   >
-                    <img src={InputCloseBtn} alt="" className="" />
+                    <img src={InputCloseBtn} />
                   </button>
                 </div>
               );
